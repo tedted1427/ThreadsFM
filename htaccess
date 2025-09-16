@@ -1,0 +1,29 @@
+
+
+# ThreadsFM pretty URLs
+RewriteEngine On
+
+# /register verwijst naar register.php
+RewriteRule ^register$ register.php [L]
+
+# /login verwijst naar login.php
+RewriteRule ^login$ login.php [L]
+
+# /logout verwijst naar logout.php
+RewriteRule ^logout$ logout.php [L]
+
+# /vote verwijst naar vote.php
+RewriteRule ^vote$ vote.php [L]
+
+# /home verwijst naar index.php
+RewriteRule ^home$ index.php [L]
+
+# /account verwijst naar account.php
+RewriteRule ^account$ account.php [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php83” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
